@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/my_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Vaccination"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/log"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#6d00c1"
+        android:textSize="30sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/log"
+            android:layout_marginRight="16dp"
+            android:layout_centerInParent="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:textColor="#6d00c1"
+                android:id="@+id/username"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:id="@+id/password"
+                android:textColor="#6d00c1"
+                android:inputType="textPassword"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="#6d00c1"
+                android:textColor="#fff"
+                android:id="@+id/loginBtn"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+

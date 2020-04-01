@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/profileCard"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name:"
+                android:fontFamily="@font/my_custom_font"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:fontFamily="@font/my_custom_font"
+                android:layout_toRightOf="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some Borgohain"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_custom_font"
+                android:layout_below="@+id/name"
+                android:text="age:"
+                android:id="@+id/age"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_custom_font"
+                android:layout_toRightOf="@+id/age"
+                android:layout_below="@id/name"
+                android:text="XX"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_custom_font"
+                android:layout_below="@+id/age"
+                android:text="adress"
+                android:id="@+id/adress"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/my_custom_font"
+                android:layout_below="@+id/age"
+                android:text="xyz street"
+                android:layout_toRightOf="@+id/adress"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/parentsImage"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher"
+                ></ImageView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileCard"
+        android:layout_margin="10dp"
+        android:id="@+id/vaccine"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_custom_font"
+            android:text="Why vaccine is Important \n Vaccination protects children from serious illness and complications of vaccine-preventable diseases which can include amputation of an arm or leg, paralysis of limbs, hearing loss, convulsions, brain damage, and death. Vaccine-preventable diseases, such as measles, mumps, and whooping cough, are still a threat."
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/vaccine">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child One"
+            android:id="@+id/child"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/vaccine"
+        android:layout_marginTop="50dp"
+       />
+
+
+
+</RelativeLayout>
